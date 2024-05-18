@@ -1,18 +1,18 @@
-streamlit
+streamlit==1.34.0
+streamlit-chat
 pandas
 numpy
 matplotlib
 requests
-click<=8.0.4
 GoogleNews
 streamlit-timeline
 plotly.express
 pytz
 deep-translator
 google-generativeai
+openai
 gTTS
 streamlit_chat
 python-docx
-#python-docx pillow
 enelvo
 wordcloud
