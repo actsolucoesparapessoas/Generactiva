@@ -199,7 +199,7 @@ with tab2:
         st.markdown(Passo2, unsafe_allow_html=True)
         st.markdown(mystyle1, unsafe_allow_html=True)
         st.write(memo)
-        
+        memo = memo.replace("*", " ")
         memo2 = st.text_input("Resposta editável:", memo)
         
         Passo3 = '<p style="font-weight: bolder; color:White; font-size: 16px;">Passo 3:</p>'
