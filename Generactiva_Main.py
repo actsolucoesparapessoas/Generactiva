@@ -165,7 +165,7 @@ with tab2:
         output2 = output2.lstrip("\n")
         # Store the outputs
         st.session_state.ai_question.append(question)
-        st.session_state.ai_answer.append("**Resposta do Gemini:** \n" + output + " \n " + " \n **Resposta do CHATGPT:** \n" + output2)
+        st.session_state.ai_answer.append("**Resposta do Gemini:** \n" + output + " \n " + " \n **Resposta OPENAI:** \n" + output2)
         NomeArq = st.sidebar.text_input("Digite NOME do arquivo.DOCx e tecle ENTER: 👇", 'generactiva.docx')
         TITULO = st.sidebar.text_input("↪️ Título do arq.DOCX: ", "Programado por Massaki Igarashi")
         check_file = os.path.isfile(NomeArq)
