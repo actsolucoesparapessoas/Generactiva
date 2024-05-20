@@ -1,2 +1,2 @@
 # Generactiva
-Generactiva: A IA Generativa da ACT - Soluções para Pessoas
+[Generactiva: A IA Generativa da ACT](https://generactiva.streamlit.app/)
