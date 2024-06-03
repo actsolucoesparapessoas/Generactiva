@@ -153,7 +153,7 @@ def api_openai(prompt):
     client = OpenAI(api_key=OPENAI_KEY)
     completion = client.chat.completions.create(
       #model="gpt-3.5-turbo",
-      model="gpt-4",
+      model="gpt-4o",
       messages=[
         {"role": "user", "content": str(prompt)}
       ]
