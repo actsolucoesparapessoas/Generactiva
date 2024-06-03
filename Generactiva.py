@@ -259,7 +259,7 @@ def main():
                     umidade = float(CNC.Umidade)
                 st.metric("JDI: " +  CNC.Descricao_clima_En, str(CNC.Temp_C) + "ºC", str(CNC.Umidade) + "%" )
                 
-    noticia = Noticia_Selecionada[:120]
+    noticia = En2Pt(Noticia_Selecionada[:120])
     with st.expander("Notícias e destaque: "):
         st.link_button(noticia, Link_Selecionado)
         st.write("As cinco notícias mais listadas:")
