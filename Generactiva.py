@@ -231,7 +231,7 @@ def main():
  
     #================================================= CARDS de COTAÇÕES, NOTÍCIAS E PREVISÃO DO TEMPO ======================================
     CNC() #Faz a Chamada à Biblioteca CNC (Cotações, Notícias e Clima) para poder obter dados a partir dos seus atributos
-    Noticia_Selecionada = "**Notícia:** " + norm.normalise(CNC.Noticia_Selecionada)
+    Noticia_Selecionada = norm.normalise(CNC.Noticia_Selecionada)
     Link_Selecionado = CNC.Link_Selecionado
     col1 = st.columns(2)
     ##st.metric("Titulo_Superior", "Valor", "Variação")
