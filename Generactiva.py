@@ -261,8 +261,8 @@ def main():
                 
     noticia = En2Pt(Noticia_Selecionada[:120])
     with st.expander("Notícias e destaque 🌎: "):
-        BTNnews = st.button(noticia, help="Acessa o link da notícia selecionada", type="secondary", use_container_width=True)
-        webbrowser.open(Link_Selecionado)
+        URL=str(f"[{noticia}]({Link_Selecionado})")
+        st.write(URL)
         st.write("As cinco notícias mais listadas:")
         st.write(CNC.CincoMais)
     st.divider()
