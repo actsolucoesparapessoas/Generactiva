@@ -260,8 +260,13 @@ def main():
                 st.metric("JDI: " +  CNC.Descricao_clima_En, str(CNC.Temp_C) + "ºC", str(CNC.Umidade) + "%" )
                 
     noticia = En2Pt(Noticia_Selecionada[:120])
-    with st.expander("Notícias e destaque: "):
-        st.link_button(noticia, Link_Selecionado)
+    with st.expander("Notícias e destaque 🌎: "):
+        BTNnews = st.button(noticia, help="Acessa o link da notícia selecionada", type="secondary", use_container_width=True)
+        if BTNnews:
+            with keyboard.pressed(Key.ctrl):
+                keyboard.press('w')
+                keyboard.release('w') 
+            webbrowser.open(Link_Selecionado)
         st.write("As cinco notícias mais listadas:")
         st.write(CNC.CincoMais)
     st.divider()
