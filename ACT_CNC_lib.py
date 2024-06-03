@@ -47,8 +47,8 @@ def CNC():
     
     #NOTÍCIAS
     googlenews = GoogleNews()
-    googlenews.set_lang('pt')
-    #googlenews.set_lang('en')
+    #googlenews.set_lang('pt')
+    googlenews.set_lang('en')
     googlenews.set_period('3d')
     #googlenews.set_time_range('02/01/2020','02/28/2020')
     googlenews.set_encode('utf-8')
