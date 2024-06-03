@@ -16,4 +16,3 @@ streamlit_chat
 python-docx
 enelvo
 wordcloud
-webbrowser
