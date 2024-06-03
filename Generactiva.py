@@ -25,13 +25,8 @@ norm = Normaliser(tokenizer='readable')
 Pergunta = False
 import sqlite3
 
-import pynput
-from pynput.keyboard import Key, Controller
-keyboard = Controller()
-
 import webbrowser
 from ACT_CNC_lib import *
-
 
 #MENU E CONFIGURAÇÕES DA PÁGINA
 ajuda = "https://docs.streamlit.io" 
