@@ -263,8 +263,8 @@ def main():
     with st.expander("Notícias e destaque 🌎: "):
         URL=str(f"[{noticia}]({Link_Selecionado})")
         st.write(URL)
-        st.write("As cinco notícias mais listadas:")
-        st.write(CNC.CincoMais)
+        #st.write("As cinco notícias mais listadas:")
+        #st.write(CNC.CincoMais)
     st.divider()
     #==============================================================================================================================
     
