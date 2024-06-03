@@ -261,8 +261,11 @@ def main():
                 
     noticia = En2Pt(Noticia_Selecionada[:120])
     with st.expander("Notícias e destaque 🌎: "):
-        URL=str(f"[{noticia}]({Link_Selecionado})")
-        st.write(URL)
+        AtivaNews = True
+        if AtivaNews:
+            URL=str(f"[{noticia}]({Link_Selecionado})")
+            st.write(URL)
+        AtivaNews = st.button("↪️Atualizar Notícia!", help="Atualiza notícia", type="secondary")
         #st.write("As cinco notícias mais listadas:")
         #st.write(CNC.CincoMais)
     st.divider()
