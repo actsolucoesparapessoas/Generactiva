@@ -205,7 +205,7 @@ def main():
     st.sidebar.image(image, width=300)
     #st.image(ArqPNG, width=600, caption='Label da Figura')
     st.sidebar.divider()
-    Rodape = '<p style="font-weight: bolder; color:darkblue; font-size: 16px;">Desenvolvido por Massaki de O. Igarashi (Integrante  do Grupo de Pesquisa em Direito, Inovação e Tecnologia - GPDIT) | Plataforma suportada por Inteligência Artificial Generativa.</p>'
+    Rodape = '<p style="font-weight: bolder; color:white; font-size: 16px;">Desenvolvido por Massaki de O. Igarashi (Integrante  do Grupo de Pesquisa em Direito, Inovação e Tecnologia - GPDIT) | Plataforma suportada por Inteligência Artificial Generativa.</p>'
     st.sidebar.markdown(Rodape, unsafe_allow_html=True)
     mystyle0 =   '''<style> p{text-align:center;}</style>'''
     st.sidebar.markdown(mystyle0, unsafe_allow_html=True) 
