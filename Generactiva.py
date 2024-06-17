@@ -118,6 +118,7 @@ def ADD_registro(USUARIO, PESQUISA, DATA):
                 data DATE)''')
     sql.execute('''INSERT INTO Pesq (usuario, pesquisa, data) VALUES (?, ?, ?)''',(USUARIO, PESQUISA, DATA))
     connection.commit()
+    connection.close()
 
 # Exclui um registro da tabela
 def DEL_registro(id):
@@ -125,6 +126,7 @@ def DEL_registro(id):
     sql = connection.cursor()
     sql.execute('''DELETE FROM Pesq WHERE id = ?''', (id,))
     connection.commit()
+    connection.close()
 
 # Exibe todos os registros da tabela
 def MOSTRAR_registros():
