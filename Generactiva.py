@@ -178,7 +178,7 @@ def api_gemini(QUESTION):
 
 def Nuvem_de_Palavras(msg):
     stopwords = set(STOPWORDS)
-    stopwords.update(["ao", "da", "de", "e", "E", "é", "É", "em", "Em", "meu", "nao", "não", "o", "ou", "os",  "para", "que", "Que", "ser", "só", "Te", "ter", "um", "você"])
+    stopwords.update(["ao", "da", "das", "de", "e", "E", "é", "É", "em", "Em", "meu", "nao", "não", "o", "ou", "os",  "para", "que", "Que", "ser", "só", "Te", "ter", "um", "você"])
     # gerar uma wordcloud
     wordcloud = WordCloud(stopwords=stopwords,
                           background_color="white",
